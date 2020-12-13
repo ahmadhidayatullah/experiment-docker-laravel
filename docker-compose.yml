@@ -1,12 +1,11 @@
-version: '3'
+version: "3"
 services:
-
   #PHP Service
   app:
     build:
       context: .
       dockerfile: Dockerfile
-    image: php:7.3
+    image: php:7.3.25-fpm
     container_name: app
     restart: unless-stopped
     tty: true
